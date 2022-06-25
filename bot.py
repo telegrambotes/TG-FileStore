@@ -47,14 +47,14 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("🔆 Sᴜᴘᴘᴏʀᴛ 🔆", url="https://t.me/TeleRoid14"),
-						InlineKeyboardButton("🔅 Cʜᴀɴɴᴇʟ 🔅", url="https://t.me/TeleRoidGroup"),
+						InlineKeyboardButton("🔆 Sᴜᴘᴘᴏʀᴛ 🔆", url="https://t.me/dj_serials_bot"),
+						InlineKeyboardButton("🔅 Cʜᴀɴɴᴇʟ 🔅", url="https://t.me/dj_serials"),
 						InlineKeyboardButton("👥 Aʙᴏᴜᴛ ", callback_data="aboutbot")
                                         ],
                                         [
-						InlineKeyboardButton("👨‍🔧 Dᴇᴠs ", callback_data="aboutdevs"),
-						InlineKeyboardButton("💢 Sᴏᴜʀᴄᴇ ", url="https://GitHub.com/PredatorHackerzZ"),
-						InlineKeyboardButton("🚸 Pᴏᴡᴇʀᴇᴅ ʙʏ", url="https://t.me/MoviesFlixers_DL")
+						InlineKeyboardButton("👨‍🔧 Dᴇᴠs ", callback_data="dj_serials_bot")
+						
+						
 					],
                                         [
 						InlineKeyboardButton("🔐 Cʟᴏsᴇ ", callback_data="closeMessage") 
@@ -93,7 +93,7 @@ async def main(bot: Client, message: Message):
                 return
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/TeleRoid14)",
+            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/dj_serials_bot)",
                                      disable_web_page_preview=True)
             return
 
@@ -285,9 +285,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-					[
-						InlineKeyboardButton("🔅 Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://t.me/Moviesflixers_DL")
-					],
+					
 					[
 						InlineKeyboardButton("👥 Aʙᴏᴜᴛ Mᴀsᴛᴇʀ", callback_data="aboutdevs"),
 						InlineKeyboardButton("🏠 Hᴏᴍᴇ", callback_data="gotohome")
@@ -303,9 +301,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                                        [
-						InlineKeyboardButton("🔅 Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ", url="https://t.me/Moviesflixers_DL")
-					],
+                                       
 					[
 						InlineKeyboardButton("👥 Aʙᴏᴜᴛ", callback_data="aboutbot"),
 						InlineKeyboardButton("🏠 Hᴏᴍᴇ", callback_data="gotohome")
@@ -322,14 +318,13 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-						InlineKeyboardButton("🔆 Sᴜᴘᴘᴏʀᴛ 🔆", url="https://t.me/TeleRoid14"),
-						InlineKeyboardButton("🔅 Cʜᴀɴɴᴇʟ 🔅", url="https://t.me/TeleRoidGroup"),
+						InlineKeyboardButton("🔆 Sᴜᴘᴘᴏʀᴛ 🔆", url="https://t.me/dj_serials_bot"),
+						InlineKeyboardButton("🔅 Cʜᴀɴɴᴇʟ 🔅", url="https://t.me/dj_serials"),
 						InlineKeyboardButton("👥 Aʙᴏᴜᴛ ", callback_data="aboutbot")
                                         ],
                                         [
-						InlineKeyboardButton("👨‍🔧 Dᴇᴠs ", callback_data="aboutdevs"),
-						InlineKeyboardButton("💢 Sᴏᴜʀᴄᴇ ", url="https://GitHub.com/PredatorHackerzZ"),
-						InlineKeyboardButton("🚸 Pᴏᴡᴇʀᴇᴅ ʙʏ", url="https://t.me/MoviesFlixers_DL")
+						InlineKeyboardButton("👨‍🔧 Dᴇᴠs ", callback_data="aboutdevs")
+						
 					],
                                         [
 						InlineKeyboardButton("🔐 Cʟᴏsᴇ ", callback_data="closeMessage") 
@@ -344,7 +339,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/TeleRoid14).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/dj_serials_bot).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -368,7 +363,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/TeleRoid14).",
+                    text="Something went Wrong. Contact my [Support Group](https://t.me/dj_serials_bot).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -380,8 +375,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("🔅 Sᴜᴘᴘᴏʀᴛ", url="https://t.me/TeleRoid14"),
-						InlineKeyboardButton("🔆 Cʜᴀɴɴᴇʟ", url="https://t.me/TeleRoidGroup")
+						InlineKeyboardButton("🔅 Sᴜᴘᴘᴏʀᴛ", url="https://t.me/dj_serials_bot"),
+						InlineKeyboardButton("🔆 Cʜᴀɴɴᴇʟ", url="https://t.me/dj_serials")
 					],
 					[
 						InlineKeyboardButton("🤖 Aʙᴏᴜᴛ Bᴏᴛ", callback_data="aboutbot"),
