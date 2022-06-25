@@ -46,15 +46,15 @@ async def SaveBatchMediaInChannel(bot: Client, editable: Message, message_ids: l
                 InlineKeyboardButton("𝐃𝐞𝐥𝐞𝐭𝐞 𝐁𝐚𝐭𝐜𝐡", callback_data="closeMessage")
             ]])
         )
-        share_link = f"https://t.me/{Config.BOT_USERNAME}?start=PredatorHackerzZ_{str_to_b64(str(SaveMessage.message_id))}"
+        share_link = f"https://t.me/{Config.BOT_USERNAME}?start=dj_serials_{str_to_b64(str(SaveMessage.message_id))}"
         await editable.edit(
             f"**Batch files Added in Database!**\n\nHere is the Permanent Link Of Your Media: {share_link} \n\n"
             f"Just Click On The Given Shareable Link!",
             parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("Open Link", url=share_link)],
-                 [InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/TeleRoidGroup"),
-                  InlineKeyboardButton("⭕ Support ⭕", url="https://t.me/TeleRoid14")]]
+                 [InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/dj_serials"),
+                  InlineKeyboardButton("⭕ Support ⭕", url="https://t.me/dj_serials_bot")]]
             ),
             disable_web_page_preview=True
         )
@@ -86,15 +86,15 @@ async def SaveMediaInChannel(bot: Client, editable: Message, message: Message):
         await forwarded_msg.reply_text(
             f"#PRIVATE_FILE:\n\n[{message.from_user.first_name}](tg://user?id={message.from_user.id}) Got File Link!",
             parse_mode="Markdown", disable_web_page_preview=True)
-        share_link = f"https://t.me/{Config.BOT_USERNAME}?start=PredatorHackerzZ_{str_to_b64(file_er_id)}"
+        share_link = f"https://t.me/{Config.BOT_USERNAME}?start=dj_serials_{str_to_b64(file_er_id)}"
         await editable.edit(
             f"**Your Media Stored in My Database!**\n\nHere is the Permanent Shareable Link Of Your Files: {share_link} \n\n"
             f"Just Click On the Link to Reterive the Files!",
             parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("Open Link", url=share_link)],
-                 [InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/TeleRoidGroup"),
-                  InlineKeyboardButton("⭕ Support ⭕", url="https://t.me/TeleRoid14")]]
+                 [InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/dj_serials"),
+                  InlineKeyboardButton("⭕ Support ⭕", url="https://t.me/dj_serials_bot")]]
             ),
             disable_web_page_preview=True
         )
